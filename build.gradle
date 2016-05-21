@@ -52,5 +52,5 @@ javadoc.options {
 }
 run {
     systemProperty 'jdev.name', 'sm-profiler'
-    systemProperty 'jagent.args', 'server=localhost,port=8080'
+    systemProperty 'jagent.args', 'server=localhost,port=8080,reporter=sm.report.MemoryProfile.class'
 }
