@@ -14,7 +14,7 @@ apply plugin: 'application'
 
 sourceCompatability='1.8'
 
-mainClassName='sm.jtemplate.Main'
+mainClassName='sm.profiler.Main'
 
 //Add configurations section
 configurations {
