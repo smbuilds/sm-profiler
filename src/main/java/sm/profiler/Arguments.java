@@ -31,6 +31,7 @@ public class Arguments {
     
     private String reportingServer;
     private int port;
+    private String metricsReporter;
     
     public Arguments(Map<String,String> args) {
         reportingServer= args.get(SERVER);
@@ -40,6 +41,7 @@ public class Arguments {
         }catch (NumberFormatException nfe) {
           throw new IllegalArgumentException("Invalid port number provided for reporting host.");       
         }
+        metricsReporter = args.get(REPORTER);
     }
     
     /**
@@ -51,6 +53,8 @@ public class Arguments {
         if (null != ps) {
             ps.println(SERVER + " = " + reportingServer);
             ps.println(PORT + " = " + port);
+            ps.println("-------Options arguments--------");
+            ps.println(REPORTER + " = " + metricsReporter);
         } else {
             System.out.println("Given printstream is null");
         }        
