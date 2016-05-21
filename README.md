@@ -1,2 +1,2 @@
 # sm-profiler
-A java agent that profiles the jvm that sends metrics to multiple listners 
+A java agent that profiles the jvm and sends metrics to multiple listners 
